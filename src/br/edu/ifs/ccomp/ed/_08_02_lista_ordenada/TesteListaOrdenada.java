@@ -7,7 +7,7 @@ public class TesteListaOrdenada {
      * @param args
      */
     public static void main(String[] args) {
-        ListaOrdenada<Candidato> lista = new ListaOrdenada<Candidato>();
+        ListaOrdenada lista = new ListaOrdenada();
         lista.adiciona(new Candidato("Joao", 42, 62));
         lista.adiciona(new Candidato("Maria", 40, 80));
         lista.adiciona(new Candidato("Rafael", 30, 80));

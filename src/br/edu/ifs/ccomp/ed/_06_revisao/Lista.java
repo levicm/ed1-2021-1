@@ -7,4 +7,12 @@ public interface Lista<T> {
 	public int busca(T element);
 	public void remove(int posicao);
 	public int tamanho();
+	
+	// Adicionados na revisão
+    public int remove(T elemento);
+    public boolean removeTodos(T elemento);
+    public void copiaDe(T[] origem);
+    public void copiaDe(Lista<T> origem);
+    public boolean igual(Lista<T> lista);
+
 }

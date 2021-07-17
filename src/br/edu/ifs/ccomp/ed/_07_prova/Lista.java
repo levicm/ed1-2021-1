@@ -8,7 +8,15 @@ public interface Lista<T> {
 	public void remove(int posicao);
 	public int tamanho();
 	
-	public void substitui(int posicao, T elemento);
+    // Adicionados na revisão
+    public int remove(T elemento);
+    public boolean removeTodos(T elemento);
+    public void copiaDe(T[] origem);
+    public void copiaDe(Lista<T> origem);
+    public boolean igual(Lista<T> lista);
+
+    // Adicionados na prova
+    public void substitui(int posicao, T elemento);
 	public void copiaPara(T[] arranjo);
 	public void inverte();
 	public Lista<T> segmento(int inicio, int fim);

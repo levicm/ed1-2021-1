@@ -1,29 +1,30 @@
 package br.edu.ifs.ccomp.ed._08_02_lista_ordenada;
 
-public class ListaOrdenada<T> {
+public class ListaOrdenada {
     private Object[] arranjo = new Object[100];
     private int tamanho = 0;
 
-    @SuppressWarnings("unchecked")
-    public void adiciona(Comparable<T> element) {
+    @SuppressWarnings({ "unchecked", "rawtypes" })
+    public void adiciona(Comparable element) {
         garanteEspaco();
-        int pos = -1;
-        for (int i = 0; i < tamanho; i++) {
-            // Se encontrou um elemento maior, insere nessa posição
-            if (element.compareTo((T) arranjo[i]) <= 0) {
+        boolean inseriuNoMeio = false;
+        for (int i = 0; i < this.tamanho; i++) {
+            // Se encontrou um elemento maior, encontrou a posição
+            if (element.compareTo(arranjo[i]) <= 0) {
                 // Faz o deslocamento dos elementos posteriores
                 for (int j = this.tamanho; j > i; --j) {
-                    arranjo[j] = arranjo[j - 1];
+                    this.arranjo[j] = this.arranjo[j - 1];
                 }
-                arranjo[i] = element;
-                pos = i;
+                this.arranjo[i] = element;
+                inseriuNoMeio = true;
                 break;
             }
         }
-        if (pos == -1) {
-            arranjo[tamanho] = element;
+        if (!inseriuNoMeio) {
+            // Adiciona no final
+            this.arranjo[this.tamanho] = element;
         }
-        tamanho++;
+        this.tamanho++;
     }
 
     private void garanteEspaco() {

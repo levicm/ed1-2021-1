@@ -174,14 +174,4 @@ public class ListaArranjo<T> implements Lista<T> {
         result.append("]");
         return result.toString();
     }
-    
-    public Lista<T> segment(int i, int i1) {
-        Lista<T> result = new ListaArranjo<T>();
-        // Lógica de adicionar elementos...
-        for (int j = 0; j < arranjo.length; j++) {
-            result.adiciona(null);
-        }
-        
-        return result;
-    }
 }
