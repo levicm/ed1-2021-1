@@ -1,4 +1,4 @@
-package br.edu.ifs.ccomp.ed._06_revisao;
+package br.edu.ifs.ccomp.ed._08_01_comparable;
 
 public class ListaArranjo<T> implements Lista<T> {
     private Object[] arranjo = new Object[100];
