@@ -9,13 +9,11 @@ public class PilhaArranjo<T> implements Pilha<T> {
         topo = -1;
     }
 
-    @Override
     public void adiciona(T elemento) {
         topo++;
         arranjo[topo] = elemento;
     }
 
-    @Override
     public T remove() {
         T result = null;
         if (topo >= 0) {
@@ -26,7 +24,6 @@ public class PilhaArranjo<T> implements Pilha<T> {
         return result;
     }
 
-    @Override
     public T topo() {
         T result = null;
         if (topo >= 0) {
@@ -35,12 +32,10 @@ public class PilhaArranjo<T> implements Pilha<T> {
         return result;
     }
 
-    @Override
     public int tamanho() {
         return topo + 1;
     }
 
-    @Override
     public boolean vazia() {
         return topo == -1;
     }

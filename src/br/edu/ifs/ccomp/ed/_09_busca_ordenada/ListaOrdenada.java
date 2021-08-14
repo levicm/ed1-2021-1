@@ -19,17 +19,14 @@ public class ListaOrdenada<T extends Comparable<T>> implements Lista<T> {
         }
     }
 
-    @Override
     public void adiciona(int posicao, T element) {
         adiciona(element);
     }
 
-    @Override
     public T pega(int posicao) {
         return lista.pega(posicao);
     }
 
-    @Override
     public int busca(T element) {
 //        return lista.busca(element); // Busca linear sequencial
         return buscaOrdenada(element);
@@ -49,57 +46,46 @@ public class ListaOrdenada<T extends Comparable<T>> implements Lista<T> {
         return -1;
     }
 
-    @Override
     public void remove(int posicao) {
         lista.remove(posicao);
     }
 
-    @Override
     public int tamanho() {
         return lista.tamanho();
     }
 
-    @Override
     public int remove(T elemento) {
         return lista.remove(elemento);
     }
 
-    @Override
     public boolean removeTodos(T elemento) {
         return lista.removeTodos(elemento);
     }
 
-    @Override
     public void copiaDe(T[] origem) {
         lista.copiaDe(origem);
     }
 
-    @Override
     public void copiaDe(Lista<T> origem) {
         lista.copiaDe(origem);
     }
 
-    @Override
     public boolean igual(Lista<T> lista) {
         return lista.igual(lista);
     }
 
-    @Override
     public void substitui(int posicao, T elemento) {
         lista.substitui(posicao, elemento);
     }
 
-    @Override
     public void copiaPara(T[] arranjo) {
         lista.copiaPara(arranjo);
     }
 
-    @Override
     public void inverte() {
         lista.inverte();
     }
 
-    @Override
     public Lista<T> segmento(int inicio, int fim) {
         return lista.segmento(inicio, fim);
     }

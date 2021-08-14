@@ -48,7 +48,6 @@ public class ListaArranjo<T> implements Lista<T> {
 		return (T) arranjo[posicao];
 	}
 
-	@Override
 	public int busca(T element) {
 		for (int i = 0; i < this.tamanho; ++i) {
 			if (arranjo[i].equals(element)) {

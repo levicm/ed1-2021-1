@@ -56,78 +56,65 @@ public class ListaOrdenada<T extends Comparable<T>> implements Lista<T> {
         return result.toString();
     }
 
-    @Override
     public T pega(int posicao) {
         return null;
     }
 
-    @Override
     public void adiciona(int posicao, T element) {
         // TODO Auto-generated method stub
         
     }
 
-    @Override
     public int busca(T element) {
         // TODO Auto-generated method stub
         return 0;
     }
 
-    @Override
     public void remove(int posicao) {
         // TODO Auto-generated method stub
         
     }
 
-    @Override
     public int remove(T elemento) {
         // TODO Auto-generated method stub
         return 0;
     }
 
-    @Override
     public boolean removeTodos(T elemento) {
         // TODO Auto-generated method stub
         return false;
     }
 
-    @Override
     public void copiaDe(T[] origem) {
         // TODO Auto-generated method stub
         
     }
 
-    @Override
     public void copiaDe(Lista<T> origem) {
         // TODO Auto-generated method stub
         
     }
 
-    @Override
     public boolean igual(Lista<T> lista) {
         // TODO Auto-generated method stub
         return false;
     }
 
-    @Override
     public void substitui(int posicao, T elemento) {
         // TODO Auto-generated method stub
         
     }
 
-    @Override
     public void copiaPara(T[] arranjo) {
         // TODO Auto-generated method stub
         
     }
 
-    @Override
     public void inverte() {
         // TODO Auto-generated method stub
         
     }
 
-    @Override
     public Lista<T> segmento(int inicio, int fim) {
         // TODO Auto-generated method stub
         return null;

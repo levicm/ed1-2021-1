@@ -18,7 +18,6 @@ public class Candidato implements Comparable<Candidato> {
         return nome + " | " + idade + " [" + nota + "]";
     }
 
-    @Override
     public int compareTo(Candidato o) {
         if (nota > o.nota) {
             return 1;

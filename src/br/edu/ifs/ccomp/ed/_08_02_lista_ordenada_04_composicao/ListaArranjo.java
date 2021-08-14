@@ -67,7 +67,6 @@ public class ListaArranjo<T> implements Lista<T> {
         return tamanho;
     }
 
-    @Override
     public int busca(T element) {
         for (int i = 0; i < tamanho; ++i) {
             if (arranjo[i].equals(element)) {
@@ -148,7 +147,6 @@ public class ListaArranjo<T> implements Lista<T> {
         }
     }
 
-    @Override
     public void substitui(int posicao, T elemento) {
         if (!posicaoOcupada(posicao)) {
             throw new IndexOutOfBoundsException(posicao);
@@ -157,7 +155,6 @@ public class ListaArranjo<T> implements Lista<T> {
     }
 
     @SuppressWarnings("unchecked")
-    @Override
     public void copiaPara(T[] arranjo) {
         for (int i = 0; i < arranjo.length && i < tamanho; i++) {
             arranjo[i] = (T) this.arranjo[i];
@@ -167,7 +164,6 @@ public class ListaArranjo<T> implements Lista<T> {
     /**
      * Complexidade: O(n/2) ~ O(n)
      */
-    @Override
     public void inverte() {
         Object tmp;
         int meio = tamanho / 2;
@@ -179,7 +175,6 @@ public class ListaArranjo<T> implements Lista<T> {
     }
 
     @SuppressWarnings("unchecked")
-    @Override
     public Lista<T> segmento(int inicio, int fim) {
         if (!(inicio < fim && posicaoOcupada(inicio) && posicaoOcupada(fim))) {
             throw new IllegalArgumentException("Posicoes inválidas ou fora da faixa: " + inicio + ", " + fim);
@@ -192,7 +187,6 @@ public class ListaArranjo<T> implements Lista<T> {
     }
 
     @SuppressWarnings("rawtypes")
-    @Override
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;

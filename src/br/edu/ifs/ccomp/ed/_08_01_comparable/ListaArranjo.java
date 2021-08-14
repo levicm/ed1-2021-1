@@ -51,7 +51,6 @@ public class ListaArranjo<T> implements Lista<T> {
     /**
      * Retorna a posição do elemento encontrado ou -1 caso não seja encontrado.
      */
-    @Override
     public int busca(T element) {
         for (int i = 0; i < this.tamanho; ++i) {
             if (arranjo[i].equals(element)) {
